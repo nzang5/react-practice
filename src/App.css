@@ -14,10 +14,41 @@ img{
   margin-left: 5rem;
 }
 
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4rem;
+  margin-right: 5rem;
+  list-style: none;
+}
+
+.navbar a{
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.navbar a:hover{
+  color: rgb(0, 217, 255);
+  cursor: pointer;
+}
+
 
 /* MAIN CONTENT */
 .container{
+  margin-top: 3rem;
   margin-left: 5rem;
+  background-image: url(./img/react-icon-large.png);
+  background-repeat:no-repeat;
+  background-size: 15rem;
+  background-position: right center;
 }
 
 h1{
@@ -32,15 +63,11 @@ ul{
 li{
   font-size: 2em;
   line-height: 3.5rem;
-  list-style: none;
 }
 
-ul li:before {
-  content: "\2022";
-  color: rgb(0, 217, 255);
-  display: inline-block; 
-  width: 1em;
-  margin-left: -1em;
+
+ul li::marker{
+  color: #61DAFB;
 }
 
 span {
